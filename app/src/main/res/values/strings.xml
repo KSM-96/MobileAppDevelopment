@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Smart Pantry Manager</string>
+    <string name="welcome_message">Make the most of what you have.</string>
+    <string name="pantry_heading">Your kitchen, smarter</string>
+    <string name="intro_text">Track your ingredients, discover recipes, and reduce food waste.</string>
+    <string name="my_pantry">My Pantry</string>
+    <string name="suggested_recipes">Suggested Recipes</string>
+</resources>
