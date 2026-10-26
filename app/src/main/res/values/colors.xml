@@ -2,4 +2,20 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Burgundy theme -->
+    <color name="green_primary">#800020</color>
+    <color name="green_dark">#590016</color>
+    <color name="amber_secondary">#800020</color>
+    <color name="amber_dark">#590016</color>
+
+    <color name="burgundy">#800020</color>
+    <color name="burgundy_dark">#590016</color>
+    <color name="burgundy_light">#FDF5F7</color>
+
+    <color name="text_primary">#0F172A</color>
+    <color name="text_secondary">#64748B</color>
+    <color name="text_hint">#94A3B8</color>
+    <color name="card_stroke">#E0E0E0</color>
+    <color name="heart_red">#800020</color>
 </resources>

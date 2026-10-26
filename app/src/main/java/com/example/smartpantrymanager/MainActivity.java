@@ -1,10 +1,8 @@
-
 package com.example.smartpantrymanager;
 
-import android.os.Bundle;
 import android.content.Intent;
+import android.os.Bundle;
 import android.widget.Button;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,6 +10,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button openPantryButton;
     private Button suggestRecipesButton;
+    private Button settingsButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,21 +19,30 @@ public class MainActivity extends AppCompatActivity {
 
         openPantryButton = findViewById(R.id.openPantryButton);
         suggestRecipesButton = findViewById(R.id.suggestRecipesButton);
+        settingsButton = findViewById(R.id.settingsButton);
 
-        openPantryButton.setOnClickListener(view ->
-                Toast.makeText(
-                        MainActivity.this,
-                        "Welcome to My Pantry!",
-                        Toast.LENGTH_SHORT
-                ).show()
-        );
+        openPantryButton.setOnClickListener(v -> {
+            Intent intent = new Intent(
+                    MainActivity.this,
+                    PantryActivity.class
+            );
+            startActivity(intent);
+        });
 
-        suggestRecipesButton.setOnClickListener(view ->
-                Toast.makeText(
-                        MainActivity.this,
-                        "Welcome to Suggested Recipes!",
-                        Toast.LENGTH_SHORT
-                ).show()
-        );
+        suggestRecipesButton.setOnClickListener(v -> {
+            Intent intent = new Intent(
+                    MainActivity.this,
+                    RecipeActivity.class
+            );
+            startActivity(intent);
+        });
+
+        settingsButton.setOnClickListener(v -> {
+            Intent intent = new Intent(
+                    MainActivity.this,
+                    SettingsActivity.class
+            );
+            startActivity(intent);
+        });
     }
 }
